@@ -18,7 +18,7 @@
 docker run -d --name local-terraform icoelho/terraform:0.12.20
 
 
-** For more information about the installation click [here])https://learn.hashicorp.com/terraform/getting-started/install)
+** For more information about the installation click [here](https://learn.hashicorp.com/terraform/getting-started/install) **
  
 
 ## Run Terraform
@@ -37,6 +37,23 @@ docker run -d --name local-terraform icoelho/terraform:0.12.20
 
 * Confirm with "yes" to perform the deployment.
 
+
+* ** Other important commands are **
+
+* To follow style conventions, we recommend language consistency between files and modules written by different teams. The ``` terraform fmt ``` command enables standardization which automatically updates configurations in the current directory for easy readability and consistency.
+
+* If you are copying configuration snippets or just want to make sure your configuration is syntactically valid and internally consistent, the built in ``` terraform validate ``` command will check and report errors within modules, attribute names, and value types.
+
+* Destroy Infrastructure: 
+
+Destroying your infrastructure is a rare event in production environments. But if you're using Terraform to spin up multiple environments such as development, test, QA environments, then destroying is a useful action.
+
+
+``` terraform destroy ```
+
+Answer "yes" to execute this plan and destroy the infrastructure:
+
+** For more information about the commands click [here](https://www.terraform.io/docs/commands/index.html) **
 
 ## Technologies Used
 

@@ -22,8 +22,8 @@ resource "aws_instance" "example" {
   ami           = "ami-b374d5a5" # Ubuntu 16.10
   instance_type = "t2.micro"
 
-   tags = {
-    Name = "Terraform HelloWorld"
+  tags = {
+    Name = "Terraform Getting Started"
   }
 
   # Tells Terraform that this EC2 instance must be created only after the
